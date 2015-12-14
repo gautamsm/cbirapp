@@ -1,3 +1,11 @@
+Content-Based Image Recommender App on PCF
+==========================================
+This repo contains the code required to build an image recommender app on PCF. The image recommender modeling pipeline is built within the Pivotal Greenplum Database.
+The app that is hosted on PCF allows users to input an image URL and then invokes the modeling pipeline in the Greenplum Database to retrieve visually similar
+images. For the modeling pipeline, check out: https://github.com/gautamsm/data-science-on-mpp/tree/master/computer_vision
+
+The app is an instantiation of the Boilerplate for Flask Apps for Data Science on PCF (https://github.com/vatsan/dspcfboilerplate)
+
 Boilerplate for Flask Apps for Data Science on PCF
 ===================================================
 
@@ -78,7 +86,7 @@ Pushing the app to PCF
 
 2. Create User Provided Service for database credentials (first time only)
 
-        dsmiot [master●●] cf cups dspcfboilerplatecreds -p '{"host":"<HOST>","user":"<USER>","password":"<PASSWORD>", "databasename":"<DATABASE>", "port":"<PORT>" }'
+        dsmiot [master●●] cf cups dspcfboilerplatecreds -p '{"host":"<HOST>","user":"<USER>","password":"<PASSWORD>", "database":"<DATABASE>", "port":"<PORT>" }'
 
 3. Bind the User Provided Service to the app (first time only)
 

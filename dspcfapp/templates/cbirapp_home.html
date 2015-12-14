@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="search">
+    <script type="text/javascript">
+        $('.full').css("background-color","#ffffff");
+        $('.full').css("background-image","none");
+    </script>
+    <form action="/_search", method=post>
+       <h1 class="loud" style="vertical-align:bottom;color:#306754;padding-left:300px;padding-top:50px"> Image Recommender </h1>
+       <div style="padding-left:300px">
+           <div style="padding-top:10px">    
+                <input type=text name=search value="{{ request.form.search}}" size="100"></br>
+                <div class="actions">
+                    <input type=submit value="Search Images">
+                </div>   
+           </div>
+       </div>
+   </form>
+</div>
+{% endblock %}

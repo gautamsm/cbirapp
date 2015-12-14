@@ -95,3 +95,15 @@ class DBConnect(object):
 	df = psql.read_sql(query, conn_from_pool)
 	self.pool.putconn(conn_from_pool)
         return df
+
+    def executeQuery(self, query):
+        """
+           Execute query
+        """
+        self.__reconnect_if_closed__()
+        conn_from_pool = self.pool.getconn()
+        res = psql.execute(query, conn_from_pool)
+        result = res.fetchall()
+        res.close()
+        self.pool.putconn(conn_from_pool)
+        return result
