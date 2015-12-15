@@ -155,7 +155,7 @@ def search():
                 axarr[1, j].imshow(im)
                 axarr[1, j].axis('off')
                 if (j == 1):
-                    axarr[1, j].set_title('Retreived Images', {'fontsize':18, 'fontweight' : 'bold'})
+                    axarr[1, j].set_title('Retrieved Images', {'fontsize':18, 'fontweight' : 'bold'})
                 j = j + 1
             elif (i >=3 and i < 6):
                 axarr[2, j].imshow(im)

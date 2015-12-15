@@ -6,24 +6,6 @@ images. For the modeling pipeline, check out: https://github.com/gautamsm/data-s
 
 The app is an instantiation of the Boilerplate for Flask Apps for Data Science on PCF (https://github.com/vatsan/dspcfboilerplate)
 
-Boilerplate for Flask Apps for Data Science on PCF
-===================================================
-
-This repo contains boilerplate code for your to build your apps on PCF using Flask and psycopg2.
-You can checkout this repo into a remote empty repo of your own on GitHub or elsewhere, and customize it appropriate to spin up your own app.
-For instance, to use this boiletplate as the building block for your own PCF app, you can do the following:
-
-1. Create an empty repo on GitHub, let's call it MyApp and let's say it's URL is `https://github.com/vatsan/myapp.git`
-2. Run `git clone https://github.com/vatsan/dspcfboilerplate.git`. This will clone the boilerplate repo into a local folder on your machine.
-3. Rename the cloned repo to whatever you choose it to be (ex: myapp) `mv dspcfboilerplate myapp`
-4. From your renamed directory containing the boilerplate (`myapp`), run the following to push the boilerplate code to your newly created GitHub repo `MyApp`
-
-        git remote rm origin
-        git remote add origin https://github.com/vatsan/myapp.git
-        git push origin master
-
-
-Now your repo `myapp`, will contain the boilerplate code. You may start customizing this repo for your app going forward (ex: changing application name, author, contact info, images etc.)
 
 Pre-requisites
 ==============
@@ -55,6 +37,7 @@ Code Organization
                home.html #home page template
                about.html #about page template
                contact.html #contact page template
+               cbirapp_home.html #cbir home page
 
 
 Starting the app locally
@@ -99,8 +82,5 @@ Screenshots
 
 Here are some sample screenshots of the boilerplate app in action:
 
-![screen_1](docs/images/dspcfboilerplate_screen_1.png)
+![screen_1](docs/images/CBIRScreenShot.png)
 
-![screen_2](docs/images/dspcfboilerplate_screen_2.png)
-
-![screen_3](docs/images/dspcfboilerplate_screen_3.png)
