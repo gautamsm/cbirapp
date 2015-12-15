@@ -82,5 +82,5 @@ Screenshots
 
 Here are some sample screenshots of the boilerplate app in action:
 
-![screen_1](docs/images/CBIRScreenShot.png)
+![screen_1](docs/images/CBIRScreenshot.png)
 
