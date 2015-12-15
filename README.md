@@ -80,7 +80,7 @@ The app should now be accessible on your PCF instance.
 Screenshots
 ============
 
-Here are some sample screenshots of the boilerplate app in action:
+Here is a sample screenshot of the image recommender app in action:
 
 ![screen_1](docs/images/CBIRScreenshot.png)
 
