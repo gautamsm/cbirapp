@@ -6,6 +6,8 @@ images. For the modeling pipeline, check out: https://github.com/gautamsm/data-s
 
 The app is an instantiation of the Boilerplate for Flask Apps for Data Science on PCF (https://github.com/vatsan/dspcfboilerplate)
 
+![CBIR demo](https://github.com/gautamsm/cbirapp/raw/gh-pages/images/cbirapp_animated.gif)
+
 
 Pre-requisites
 ==============
@@ -76,11 +78,3 @@ Pushing the app to PCF
         dsmiot [master●●] cf bind-service dspcfboilerplate dspcfboilerplatecreds
 
 The app should now be accessible on your PCF instance. 
-
-Screenshots
-============
-
-Here is a sample screenshot of the image recommender app in action:
-
-![screen_1](docs/images/CBIRScreenshot.png)
-
